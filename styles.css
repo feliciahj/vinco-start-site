@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+/*
+tanzanite: rgb(74, 3, 189);
+grey: rgb(83, 80, 88);
+pink: rgb(253, 21, 214);
+lightpink: rgba(253, 21, 214, 0.212); 
+*/
+
+html, body {
+  padding: 0px;
+  font-family: 'Raleway', sans-serif; 
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  color: rgb(74, 3, 189);
+  font-size: 150px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  /* transition: all .2s ease-in-out; */
+}
+
+/* h1:hover {
+  transform: scale(1.05);
+} */
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2px;
+  width: 400px;
+  background-color: black;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(74, 3, 189); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(74, 3, 189); }
+}
+
+h2 {
+  color: rgb(83, 80, 88);
+  font-size: 20px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 30px;
+}
+
+.contact {
+  font-style: italic;
+  font-size: 25px;
+  color: rgb(74, 3, 189);
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.5);
+  color: rgb(74, 3, 189);
+}
+
+.fa {
+  height: 60px;
+  width: 60px;
+  color: rgb(83, 80, 88);
+}
+
+
