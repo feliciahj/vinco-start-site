@@ -17,5 +17,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   })
 
+  const privacyPolicy = document.querySelector('.pp')
+  const pageOne = document.querySelectorAll('.page-1')
+  const pageTwo = document.querySelectorAll('.page-2')
+  privacyPolicy.addEventListener('click', () => {
+    pageOne.forEach(elem => elem.classList.add('hidden'))
+    pageTwo.forEach(elem => elem.classList.remove('hidden'))
+  })
+
+  const backButton = document.querySelector('.back')
+  backButton.addEventListener('click', () => {
+    pageOne.forEach(elem => elem.classList.remove('hidden'))
+    pageTwo.forEach(elem => elem.classList.add('hidden'))
+  })
 
 })
