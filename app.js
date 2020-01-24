@@ -31,4 +31,44 @@ window.addEventListener('DOMContentLoaded', () => {
     pageTwo.forEach(elem => elem.classList.add('hidden'))
   })
 
+
+  // FRONT-LANDING ANIMATIONS
+  const frontLandingLine = document.querySelector('.front-landing-line')
+  const frontLandingTaglineContainer = document.querySelector('.front-landing-tagline-container')
+  const frontLandingTagline = document.querySelector('.front-landing-tagline')
+  // console.log(frontLandingLine)
+
+  let frontLandingCounter = 0
+  frontLandingLine.style.width = '0%'
+  setTimeout(() => {
+    const frontLandingAnimationCount = setInterval(() => {
+      if (frontLandingCounter >= 98) {
+        frontLandingTagline.classList.remove('hidden')
+        frontLandingTaglineContainer.classList.add('typewriter')
+      }
+      if (frontLandingCounter >= 99) clearInterval(frontLandingAnimationCount)
+      frontLandingCounter++
+      frontLandingLine.style.width = `${frontLandingCounter}%`
+    }, 15)
+  }, 300)
+
+  const frontLandingPage = document.querySelector('.front-landing')
+  const frontLandingPageContainer = document.querySelector('.front-landing-container')
+
+  let frontLandingCounterTwo = 100
+
+  setTimeout(() => {
+    const frontLandingAnimationCountTwo = setInterval(() => {
+      if (frontLandingCounterTwo === 70) {
+        frontLandingPageContainer.classList.remove('slow')
+        frontLandingPageContainer.classList.add('faster')
+        frontLandingPageContainer.classList.add('fadeOut')
+      }
+      if (frontLandingCounterTwo === 1) frontLandingPage.classList.add('hidden')
+      if (frontLandingCounterTwo === 1) clearInterval(frontLandingAnimationCountTwo)
+      frontLandingCounterTwo--
+      console.log(frontLandingCounterTwo)
+      frontLandingPage.style.height = `${frontLandingCounterTwo}vh`
+    }, 15)
+  }, 3500)
 })

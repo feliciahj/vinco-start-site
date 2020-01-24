@@ -11,7 +11,8 @@ lightpink: rgba(253, 21, 214, 0.212);
 */
 
 html, body {
-  padding: 0px;
+  padding: 0;
+  margin: 0;
   font-family: 'Raleway', sans-serif; 
   height: 100%;
   scroll-behavior: smooth;
@@ -26,6 +27,7 @@ section {
   text-align: center;
   justify-content: center;
   padding-bottom: 70px;
+  border: 1px purple dashed;
 }
 
 .icon {
@@ -61,12 +63,12 @@ h1 {
   margin-bottom: 0px;
 }
 
-.typewriter p {
+.typewriter p, h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(74, 3, 189); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  letter-spacing: .1em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret 1s step-end infinite;
@@ -81,7 +83,7 @@ h1 {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(74, 3, 189); }
+  50% { border-color: rgb(255, 255, 255); }
 }
 
 h2 {
@@ -178,3 +180,107 @@ a:visited {
   justify-content: center;
   align-items: center;
 }
+
+nav {
+  height: 10vh;
+  width: 100vw;
+  border: 1px red dashed;
+
+  position: fixed;
+}
+
+/* ************ */
+/* FRONT LANDING */
+/* ************ */
+
+.front-landing {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  
+  background: #4a03bd;
+  z-index: 1;
+}
+
+.front-landing-container {
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.front-landing-title {
+  position: relative;
+  top: -5vh;
+}
+
+.title-white {
+  color: white;
+}
+
+.front-landing-line-container {
+  height: 0.2vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.front-landing-line {
+  height: 0.2vh;
+  width: 30vw;
+
+  background: white;
+
+  position: relative;
+  top: -5vh;
+}
+
+.front-landing-tagline-container {
+  height: 5vh;
+  width: 40vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-landing-tagline {
+  color: white;
+  position: relative;
+  top: -3vh;
+}
+
+/* ************ */
+/* START SELECTION LANDING */
+/* ************ */
+
+.start-selection {
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-selection-col-1 {
+  height: 100%;
+  width: 50vw;
+
+  background: red;
+}
+.start-selection-col-2 {
+  height: 100%;
+  width: 50vw;
+  
+  background: green;
+}
+
