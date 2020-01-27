@@ -3,12 +3,13 @@
   color: black;
 }
 
-/*
+/* ******************************************************** GENERAL ******************************************************** */
+
+/* Colour scheme
 tanzanite: rgb(74, 3, 189);
 grey: rgb(83, 80, 88);
 pink: rgb(253, 21, 214);
-lightpink: rgba(253, 21, 214, 0.212); 
-*/
+lightpink: rgba(253, 21, 214, 0.212);  */
 
 html, body {
   padding: 0;
@@ -27,15 +28,177 @@ section {
   text-align: center;
   justify-content: center;
   padding-bottom: 70px;
-  border: 1px purple dashed;
 }
 
-.icon {
+.centre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+
+.vinco {
   font-family: 'Major Mono Display', monospace;
-  color: #4a03bd;
-  font-size: 150px;
+}
+
+.tanz {
+  color: rgb(74, 3, 189);
+}
+
+.grey {
+  color: rgb(83, 80, 88);
+}
+
+.bold {
+  font-weight: bold;
+  color: rgb(74, 3, 189);
+}
+
+.info {
+  height: 90vh;
+  padding: 0px;
+}
+
+.subtitle {
+  font-size: 40px;
+  color: rgb(74, 3, 189);
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 14px;
+  color: rgb(74, 3, 189);
+}
+
+/* .arrow {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* ******************************************************** LANDING PAGE ******************************************************** */
+
+.front-landing {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(74, 3, 189);
+  z-index: 1;
+}
+
+.front-landing-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.front-landing-title {
+  position: relative;
+  top: -5vh;
+}
+
+.title-white {
+  color: white;
+}
+
+.front-landing-line-container {
+  height: 0.2vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-landing-line {
+  height: 0.2vh;
+  width: 30vw;
+  background: white;
+  position: relative;
+  top: -5vh;
+}
+
+.front-landing-tagline-container {
+  height: 5vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-landing-tagline {
+  color: white;
+  position: relative;
+  top: -3vh;
+  font-size: 20px;
   font-weight: 100;
-  margin-bottom: 30px;
+}
+
+/* ******************************************************** NAVBAR ******************************************************** */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background: white;
+  position: fixed;
+}
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 5vw;
+  font-size: 50px;
+  color: rgb(74, 3, 189);
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 40vw;
+  font-weight: bold;
+}
+
+/* ******************************************************** START PAGE ******************************************************** */
+
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.brandContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.title {
+  position: relative;
+  top: -5vh;
 }
 
 h1 {
@@ -43,73 +206,213 @@ h1 {
   color: rgb(74, 3, 189);
   font-size: 150px;
   font-weight: lighter;
+  margin: 0px;
+}
+
+.logo {
+  font-family: 'Major Mono Display', monospace;
+  color: rgb(74, 3, 189);
+  font-size: 150px;
+  font-weight: 100;
   margin-bottom: 30px;
-  /* transition: all .2s ease-in-out; */
 }
 
-/* h1:hover {
-  transform: scale(1.05);
-} */
-
-.line {
+.line-container {
+  height: 0.2vh;
+  width: 30vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  height: 2px;
-  width: 400px;
-  background-color: black;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  align-items: center;
+}
+.line {
+  height: 0.2vh;
+  width: 30vw;
+  background: black;
+  position: relative;
+  top: -5vh;
 }
 
-.typewriter p, h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(74, 3, 189); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 1s step-end infinite;
+.conquer-container {
+  height: 5vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(255, 255, 255); }
-}
-
-h2 {
+.conquer {
   color: rgb(83, 80, 88);
+  position: relative;
+  top: -3vh;
   font-size: 20px;
   font-weight: 100;
 }
 
-.text {
+.startHeading {
   font-size: 30px;
+  color: rgb(83, 80, 88);
+  text-align: right;
 }
+
+.startP {
+  font-size: 20px;
+  color: rgb(83, 80, 88);
+  text-align: right;
+}
+
+/* ******************************************************** MISSION ******************************************************** */
+
+#mission {
+  /* background: rgba(83, 80, 88, 0.123); */
+  background: rgba(253, 21, 214, 0.096);
+}
+
+.mission {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mission-col {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.missionText {
+  font-size: 25px;
+  color: rgb(83, 80, 88);
+  padding: 50px;
+  margin: 0px;
+}
+
+.mission-png {
+  height: 20vw;
+  width: 20vw;
+}
+
+/* ******************************************************** HOW IT WORKS ******************************************************** */
+
+/* #how {
+
+} */
+
+.how {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.how-col {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.howText {
+  font-size: 23px;
+  color: rgb(83, 80, 88);
+  padding: 30px;
+  margin: 0px;
+}
+
+.how-png {
+  height: 7vw;
+  width: 7vw;
+  margin-top: 55px;
+}
+
+/* ******************************************************** POLL ******************************************************** */
+
+#poll {
+  background: rgba(253, 21, 214, 0.096);
+}
+
+.poll {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.poll-col {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pollText {
+  font-size: 22px;
+  color: rgb(83, 80, 88);
+  padding: 30px;
+  margin: 0px;
+}
+
+.poll-png {
+  height: 7vw;
+  width: 7vw;
+  margin-top: 55px;
+}
+
+.question {
+  font-size: 25px;
+  font-style: italic;
+  color: rgb(83, 80, 88);
+}
+.vote {
+  background: none;
+  border: none;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vote:hover {
+  background: white;
+}
+
+/* ******************************************************** GET EARLY ACCESS ******************************************************** */
+
+/* #access {
+
+} */
+
+/* ******************************************************** TEAM ******************************************************** */
+
+#team {
+  background: rgba(83, 80, 88, 0.062);
+}
+
+/* ******************************************************** CONTACT ******************************************************** */
+
+/* #contact {
+
+} */
 
 .contact {
-  font-style: italic;
-  font-size: 25px;
-  color: rgb(74, 3, 189);
-}
-
-.centre-wrapper {
-  height: 10vh;
-}
-
-.centre {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-png {
+  height: 3vw;
+  width: 3vw;
+  margin: 10px;
+}
+
+.contact-png:hover {
+  transform: scale(1.2);
 }
 
 a:link {
@@ -120,31 +423,7 @@ a:visited {
   text-decoration: none;
 }
 
-.hover:hover {
-  transform: scale(1.5);
-  color: rgb(74, 3, 189);
-}
-
-.fa {
-  height: 60px;
-  width: 60px;
-  color: rgb(83, 80, 88);
-}
-
-.arrow {
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-}
-
-.hidden {
-  display: none;
-}
-
-.info {
-  height: 90vh;
-  padding: 0px;
-}
+/* ******************************************************** FOOTER ******************************************************** */
 
 .reg {
   display: flex;
@@ -172,115 +451,30 @@ a:visited {
   color: rgb(74, 3, 189);
 }
 
+/* ******************************************************** PRIVACY POLICY ******************************************************** */
+
 .privacy {
-  /* height: 100vh; */
   width: 100vw;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav {
-  height: 10vh;
-  width: 100vw;
-  border: 1px red dashed;
-
-  position: fixed;
-}
-
-/* ************ */
-/* FRONT LANDING */
-/* ************ */
-
-.front-landing {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  
-  background: #4a03bd;
-  z-index: 1;
-}
-
-.front-landing-container {
-  height: 100%;
-  width: 100%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.front-landing-title {
-  position: relative;
-  top: -5vh;
+.marginTitle {
+  margin-left: 10px;
+  margin-bottom: 0px;
 }
 
-.title-white {
-  color: white;
+.marginText {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.front-landing-line-container {
-  height: 0.2vh;
-  width: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.click {
+  text-decoration: underline;
 }
 
-
-.front-landing-line {
-  height: 0.2vh;
-  width: 30vw;
-
-  background: white;
-
-  position: relative;
-  top: -5vh;
+.click:hover {
+  color: rgb(74, 3, 189);
 }
-
-.front-landing-tagline-container {
-  height: 5vh;
-  width: 40vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.front-landing-tagline {
-  color: white;
-  position: relative;
-  top: -3vh;
-}
-
-/* ************ */
-/* START SELECTION LANDING */
-/* ************ */
-
-.start-selection {
-  height: 100vh;
-  width: 100vw;
-  padding-bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.start-selection-col-1 {
-  height: 100%;
-  width: 50vw;
-
-  background: red;
-}
-.start-selection-col-2 {
-  height: 100%;
-  width: 50vw;
-  
-  background: green;
-}
-

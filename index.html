@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Playfair+Display|Raleway:200&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="app.js"></script>
@@ -16,39 +15,203 @@
 <body>
   <div class="front-landing">
     <div class="front-landing-container animated fadeIn slow">
-      <h1 class="front-landing-title title-white"><span class="icon title-white">V</span>INCO</h1>
+      <h1 class="front-landing-title title-white"><span class="vinco title-white">V</span>INCO</h1>
       <div class="front-landing-line-container">
         <div class="front-landing-line"></div>
       </div>
       <div class="front-landing-tagline-container">
-        <h2 class="front-landing-tagline hidden">[conquer investing]</h2>
+          <h2 class="front-landing-tagline animated fadeIn slow hidden">[conquer investing]</h2>
       </div>
     </div>
   </div>
   <nav>
-    <a>Mission</a>
-    <a>Contact</a>
+    <div class="home">
+        <a href="#title" class="vinco tanz">V</a>
+    </div>
+   <div class="navItems">
+      <a href="#mission" class="tanz">MISSION</a>
+      <a href="#team" class="tanz">TEAM</a>
+      <a href="#contact" class="tanz">CONTACT</a>
+      <a href="#access" class="tanz">GET EARLY ACCESS</a>
+   </div>
   </nav>
-  <section class="page-1 start-selection">
-    <div class="start-selection-col-1"></div>
-    <div class="start-selection-col-2"></div>
+  <section class="page-1 info" id="title">
+      <div class="start">
+        <div class="brandContainer">
+            <h1 class="title"><span class="logo">V</span>INCO</h1>
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+        <div class="conquer-container">
+          <h2 class="conquer">[conquer investing]</h2>
+        </div>
+      </div>
+      <div>
+          <h4 class="startHeading">We are a new kind of investing platform.</h4>
+          </br>
+          <p class="startP">We focus on <span class="bold">funds</span> (active and passive). 
+          </br>
+          </br>
+            We make it <span class="bold">easy</span> to find the right one for you.
+          </br>
+          </br>
+            And we give you the information in <span class="bold">plain English</span>.</p>         
+      </div>
+      </div>
+    </section>
+  <section class="page-1 info" id="mission">
+    <div class="mission">
+        <h2 class="subtitle">MISSION</h2>
+        <div class="columns">
+            <div class="mission-col">
+                <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/005-mountain.png" class="mission-png"></img>
+            </div>
+            <div class="mission-col">
+                <p class="missionText">
+                    We are on a mission to help people maximise their savings and secure their financial future.
+                  </br>
+                  </br>
+                    We believe that the process of investing should be easy, engaging, and educational - and that is what <span class="vinco grey">V</span>INCO is all about. 
+                </p>
+              </div>
+        </div>
+    </div>
   </section>
-  <section id="info" class="page-1 info">
-    <div class="centre">
-        <a href="https://twitter.com/vincoinvest/" class="fa fa-twitter fa-2x hover"></a>
-        
-        <a href="mailto:felicia@vincoinvest.com" class="fa fa-envelope fa-2x hover"></a>
+  <section class="page-1 info" id="how">
+    <div class="how">
+        <h2 class="subtitle">HOW IT WORKS</h2>
+        <div class="columns">
+          <div class="how-col">
+              <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/001-investment.png" class="how-png"></img>
+              <p class="howText">We focus on <span class="bold">funds</span>, because not everyone has the <span class="bold">time</span> to be a stock trading wizard.</p>
+          </div>
+          <div class="how-col">
+              <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/002-directions.png" class="how-png"></img>
+              <p class="howText">We only offer the <span class="bold">highest quality active and passive</span> funds. Why waste time on the rest?</p>
+          </div>
+          <div class="how-col">
+              <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/003-filter.png" class="how-png"></img>
+              <p class="howText">Use our <span class="bold">unique filters</span> to find the right fund(s) for you.</p>
+          </div>
+          <div class="how-col">
+              <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/004-confusion.png" class="how-png"></img>
+              <p class="howText">Don't speak investment? That's all right, we will be your <span class="bold">translator</span>.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="page-1 info" id="poll">
+      <div class="poll">
+          <h2 class="subtitle">WHAT DO YOU THINK?</h2>
+          <p class="question">Which of these problems can you relate to?</p>
+          <div class="columns">
+              <div class="poll-col">
+                  <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/001-hourglass.png" class="poll-png"></img>
+                  <p class="pollText">No time to pick stocks but want to invest.</p>
+                  <button class="vote time">VOTE</button>
+              </div>
+              <div class="poll-col">
+                  <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/002-track.png" class="poll-png"></img>
+                  <p class="pollText">Don't know how to find an active fund worth its fees.</p>
+                  <button class="vote active">VOTE</button>
+              </div>
+              <div class="poll-col">
+                  <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/003-profanity.png" class="poll-png"></img>
+                  <p class="pollText">I don't understand all the jargon.</p>
+                  <button class="vote jargon">VOTE</button>
+              </div>
+              <div class="poll-col">
+                  <img src="../../../Documents/VINCO/Decks and pitching/Icons and images/014-sad.png" class="poll-png"></img>
+                  <p class="pollText">Why isn't the user experience better?</p>
+                  <button class="vote ux">VOTE</button>
+              </div>
+          </div>
+        </div>
+  </section>
+  <section class="page-1 info" id="access">
+      <div class="access">
+          <h2 class="subtitle">GET EARLY ACCESS</h2>
+        </div>
+  </section>
+  <section class="page-1 info" id="team">
+      <div class="team">
+          <h2 class="subtitle">TEAM</h2>
+        </div>
+  </section>
+  <section class="page-1 info" id="contact">
+      <div class="contact">
+          <h2 class="subtitle">CONTACT</h2>
+        </div>
+      <div>
+          <a href="mailto:contact@vincoinvest.com"><img src="../../../Documents/VINCO/Decks and pitching/Icons and images/010-at.png" class="contact-png"></img></a>
+          <a href="https://twitter.com/vincoinvest"><img src="../../../Documents/VINCO/Decks and pitching/Icons and images/011-twitter.png" class="contact-png"></img></a>
+          <a href="https://medium.com/vinco-invest"><img src="../../../Documents/VINCO/Decks and pitching/Icons and images/012-medium.png" class="contact-png"></img></a>
+      </div>
     </div>
   </section>
   <div class="page-1 reg centre footer">
-      <div class="page-1">© VINCO Invest Limited. All rights reserved. VINCO Invest Limited is registered in England & Wales with company number 12357713.</div>
-        <div class="page-1">Its registered office address is Cannon Place, 78 Cannon Street, London, EC4N 6AF.</div>
+      <div class="page-1">© VINCO Invest Limited is registered in England & Wales with company number 12357713 and its registered office address is Cannon Place, 78 Cannon Street, London, EC4N 6AF.</div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a>,
+           <a href="https://www.flaticon.com/authors/smartline" title="Smartline">Smartline</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>,
+            <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a>, <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>,
+             and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         <a class="pp page-1">Privacy Policy</a>
   </div>
   <div class="page-2 hidden privacy">
-    <button class="page-2 hidden back">Go back</button>
-    <p class="page-2 hidden">hello</p>
-  </div>
+    <div>
+      <button class="page-2 hidden back">Go back</button>
+    </div>
+    <div class="page-2 hidden privacy">
+    <h2 class="page-2 hidden marginTitle">Privacy Policy – VINCO Invest Limited (the “Company”)</h2>
+        <h4 class="page-2 hidden marginTitle">Introduction</h4>
+        <p class="page-2 hidden marginText">This Privacy Policy sets out the data processing practices carried out through the use of the Internet and any other electronic communications networks by the Company.
+           If you have any requests concerning your personal information or any queries with regard to these practices please contact Felicia Hjertman at <a href="mailto:felicia@vincoinvest.com" class="click">felicia@vincoinvest.com</a>.</p>
+        <h4 class="page-2 hidden marginTitle">Information collected</h4>
+        <p class="page-2 hidden marginText">We collect personal information from visitors to this website through the use of on-line forms and every time you e-mail us your details. 
+          This website is not intended for children and we do not knowingly collect data relating to children.
+        We collect additional information automatically about your visit to our website, including personal information, which we may process for the purposes of:
+        </br>
+        </br>
+        (a)	dealing with your inquiries and requests;
+        </br>
+        (b)	administering records;
+        </br>
+        (c)	maintaining information as a reference tool or general resource; and
+        </br>
+        (d)	providing you with information about products and services.
+        </br>
+        </br>
+        You may opt out of receiving information about our services by selecting the relevant option on our website or by sending us an email at <a href="mailto:contact@vincoinvest.com" class="click">contact@vincoinvest.com</a>.
+        We may also use and disclose information in aggregate (so that no individuals are identified) for marketing and strategic development purposes.</p>
+        <h4 class="page-2 hidden marginTitle">Use of cookies</h4>
+        <p class="page-2 hidden marginText">A cookie is a small piece of information sent by a web server to a web browser, which enables the server to collect information from the browser. 
+          Find out more about the use of cookies on <a href="http://www.allaboutcookies.org/" class="click">http://www.allaboutcookies.org</a>. We use cookies to identify you when you visit this website and to keep track of your browsing patterns and build up a demographic profile.
+        Our use of cookies also allows registered users to be presented with a personalised version of the site, carry out transactions and have access to information about their account.
+        Most browsers allow you to turn off cookies or to receive a warning before a cookie is stored on your hard drive. Please refer to your browser instructions or help screen to learn more about how to do this.
+         However, should you decide to disable any cookies we place on your computer you may not be able to use certain services or facilities on the website. However, switching off cookies will restrict your use of our website.</p>
+        <h4 class="page-2 hidden marginTitle">Disclosures</h4>
+        <p class="page-2 hidden marginText">We will only disclose personal information to government bodies and law enforcement agencies, successors in title to our business and suppliers we engage to process data on our behalf.</p>
+        <h4 class="page-2 hidden marginTitle">Other websites</h4>
+        <p class="page-2 hidden marginText">Our website may contain links to other websites which are outside our control and are not covered by this Privacy Policy. If you access other sites using the links provided,
+           the operators of these sites may collect information from you which will be used by them in accordance with their privacy policy, which may differ from ours.</p>
+        <h4 class="page-2 hidden marginTitle">Access right</h4>
+        <p class="page-2 hidden marginText">You have a right to access the personal data held about you. To obtain a copy of the personal information we hold about you, please write to us at <a href="mailto:contact@vincoinvest.com" class="click">contact@vincoinvest.com</a>.</p>
+        <h4 class="page-2 hidden marginTitle">Internet-based transfers</h4>
+        <p class="page-2 hidden marginText">Given that the Internet is a global environment, using the Internet to collect and process personal data necessarily involves the transmission of data on an international basis. Therefore,
+           by browsing this website and communicating electronically with us, you acknowledge our processing of personal data in this way. 
+           However, we will endeavour to protect all personal information collected through this website in accordance with strict data protection standards.</p>
+        <h4 class="page-2 hidden marginTitle">Data retention</h4>
+        <p class="page-2 hidden marginText">By law we have to keep basic information about our customers (including Contact, Identity, Financial and Transaction Data) for six years after they cease being customers for tax purposes.
+           In some circumstances you can ask us to delete your data. In some circumstances we will anonymise your personal data (so that it can no longer be associated with you) for research or statistical purposes,
+            in which case we may use this information indefinitely without further notice to you.</p>
+        <h4 class="page-2 hidden marginTitle">Changes to this privacy policy</h4>
+        <p class="page-2 hidden marginText">From time to time we may update this Privacy Policy. When we do we will publish the changes on this website. If you do not agree to these changes, please do not continue to use the website.
+           If material changes are made to this Privacy Policy, we will notify you by e-mail or by placing a prominent notice on the website.</p>   
+        <h4 class="page-2 hidden marginTitle">Complaints</h4>
+        <p class="page-2 hidden marginText">You have the right to make a complaint at any time to the Information Commissioner’s Office (ICO), the UK supervisory authority for data protection issues <a href="https://ico.org.uk/" class="click">(www.ico.org.uk)</a>.
+           We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact us in the first instance.</p>
+      </div>
+      </div>
 </body>
 
 </html>
