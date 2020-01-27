@@ -38,10 +38,53 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 15)
   }, 2500)
 
-  // PRIVACY POLICY ANIMATIONS ******************************************************************
-  const privacyPolicy = document.querySelector('.pp')
+
+  // PRIVACY POP UP ANIMATIONS ****************************************************************** 
+  const popUpButton = document.querySelector('.link')
+  const privacyPolicyToggle = document.querySelectorAll('.priv-toggle')
+  popUpButton.addEventListener('click', () => {
+    privacyPolicyToggle.forEach(elem => elem.classList.add('hidden'))
+  })
+
+  const privacyPolicyPopUp = document.querySelector('.ppp')
   const pageOne = document.querySelectorAll('.page-1')
   const pageTwo = document.querySelectorAll('.page-2')
+  privacyPolicyPopUp.addEventListener('click', () => {
+    pageOne.forEach(elem => elem.classList.add('hidden'))
+    pageTwo.forEach(elem => elem.classList.remove('hidden'))
+  })
+
+  // VOTE ANIMATIONS ****************************************************************** 
+  const voteTimeButton = document.querySelector('.time')
+  const timeAccepted = document.querySelector('.timeAccept')
+  voteTimeButton.addEventListener('click', () => {
+    timeAccepted.classList.remove('hidden')
+    voteTimeButton.classList.add('hidden')
+  })
+
+  const voteActiveButton = document.querySelector('.active')
+  const activeAccepted = document.querySelector('.activeAccept')
+  voteActiveButton.addEventListener('click', () => {
+    activeAccepted.classList.remove('hidden')
+    voteActiveButton.classList.add('hidden')
+  })
+
+  const voteJargonButton = document.querySelector('.jargon')
+  const jargonAccepted = document.querySelector('.jargonAccept')
+  voteJargonButton.addEventListener('click', () => {
+    jargonAccepted.classList.remove('hidden')
+    voteJargonButton.classList.add('hidden')
+  })
+
+  const voteUxButton = document.querySelector('.ux')
+  const uxAccepted = document.querySelector('.uxAccept')
+  voteUxButton.addEventListener('click', () => {
+    uxAccepted.classList.remove('hidden')
+    voteUxButton.classList.add('hidden')
+  })
+
+  // PRIVACY POLICY ANIMATIONS ******************************************************************
+  const privacyPolicy = document.querySelector('.pp')
   privacyPolicy.addEventListener('click', () => {
     pageOne.forEach(elem => elem.classList.add('hidden'))
     pageTwo.forEach(elem => elem.classList.remove('hidden'))
@@ -49,13 +92,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const backButton = document.querySelector('.back')
   backButton.addEventListener('click', () => {
-    pageOne.forEach(elem => elem.classList.remove('hidden'))
-    pageTwo.forEach(elem => elem.classList.add('hidden'))
-  })
-
-  // WHY DOESN'T THIS WORK THE SAME WAY FOR NAV ITEMS?
-  const navItem = document.querySelector('.tanz')
-  navItem.addEventListener('click', () => {
     pageOne.forEach(elem => elem.classList.remove('hidden'))
     pageTwo.forEach(elem => elem.classList.add('hidden'))
   })

@@ -50,13 +50,16 @@ section {
   font-family: 'Major Mono Display', monospace;
 }
 
+.tanz {
+  color: rgb(74, 3, 189);
+}
+
 .white {
-  background:rgb(74, 3, 189);
   color: white;
 }
 
-.tanz {
-  color: rgb(74, 3, 189);
+.pink {
+  color: rgb(253, 21, 214);
 }
 
 .grey {
@@ -85,12 +88,6 @@ button {
   font-size: 14px;
   color: rgb(74, 3, 189);
 }
-
-/* .arrow {
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-} */
 
 /* ******************************************************** LANDING PAGE ******************************************************** */
 
@@ -185,21 +182,48 @@ nav {
   font-weight: bold;
 }
 
+.early {
+  height: 3vh;
+  width: 12vw;
+  background:rgb(74, 3, 189);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.early:hover {
+  background:rgb(253, 21, 214);
+  color: rgb(83, 80, 88);
+}
+
 /* ******************************************************** START PAGE ******************************************************** */
 
 .start {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.brandContainer {
+.start-col-1 {
+  width: 50vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 10px;
+  margin-top: 20px;
 }
+
+.start-col-2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+
+/* **************************** styling for branding box **************************** */
 
 .title {
   position: relative;
@@ -253,10 +277,13 @@ h1 {
   font-weight: 100;
 }
 
+/* **************************** styling for text box **************************** */
+
 .startHeading {
   font-size: 30px;
   color: rgb(83, 80, 88);
   text-align: right;
+  margin: 0px;
 }
 
 .startP {
@@ -265,15 +292,77 @@ h1 {
   text-align: right;
 }
 
+/* **************************** styling for popup **************************** */
+
+.privacyPopUp {
+  width: 90vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(83, 80, 88, 0.644);
+  border-radius: 15px;
+  position: fixed;
+  border: solid rgb(253, 21, 214);
+}
+
+.popupTitle {
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 0px; 
+  text-align: left;
+}
+
+.popup {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+/* *********** Privacy policy link *********** */
+
+.ppp {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ppp:hover {
+  color: rgb(253, 21, 214);
+  background: white;
+}
+
+/* *********** I understand button *********** */
+
+.link {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.link:hover {
+  background: rgb(253, 21, 214);
+  color: white;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.tick-png {
+  width: 1vw;
+}
+
 /* ******************************************************** MISSION ******************************************************** */
 
 #mission {
-  /* background: rgba(83, 80, 88, 0.123); */
   background: rgba(253, 21, 214, 0.096);
 }
 
 .mission {
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +385,6 @@ h1 {
 }
 
 .mission-png {
-  height: 20vw;
   width: 20vw;
 }
 
@@ -307,7 +395,6 @@ h1 {
 } */
 
 .how {
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +416,6 @@ h1 {
 }
 
 .how-png {
-  height: 7vw;
   width: 7vw;
   margin-top: 55px;
 }
@@ -337,11 +423,10 @@ h1 {
 /* ******************************************************** POLL ******************************************************** */
 
 #poll {
-  background: rgba(253, 21, 214, 0.096);
+  background: rgba(83, 80, 88, 0.062);
 }
 
 .poll {
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +449,6 @@ h1 {
 }
 
 .poll-png {
-  height: 7vw;
   width: 7vw;
   margin-top: 55px;
 }
@@ -384,6 +468,18 @@ h1 {
 
 .vote:hover {
   background: white;
+  border-radius: 15px;
+}
+
+.vote:focus {
+  outline: none;
+}
+
+.vote-png {
+  width: 3.7vw;
+  background-color: white;
+  border: 1px solid #4CD216;
+  border-radius: 50px;
 }
 
 /* ******************************************************** GET EARLY ACCESS ******************************************************** */
@@ -395,7 +491,7 @@ h1 {
 /* ******************************************************** TEAM ******************************************************** */
 
 #team {
-  background: rgba(83, 80, 88, 0.062);
+  background: rgba(253, 21, 214, 0.096);
 }
 
 /* ******************************************************** CONTACT ******************************************************** */
@@ -405,13 +501,11 @@ h1 {
 } */
 
 .contact {
-  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 .contact-png {
-  height: 3vw;
   width: 3vw;
   margin: 10px;
 }
@@ -459,7 +553,6 @@ a:visited {
 /* ******************************************************** PRIVACY POLICY ******************************************************** */
 
 .privacy {
-  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -482,4 +575,20 @@ a:visited {
 
 .click:hover {
   color: rgb(74, 3, 189);
+}
+
+.back {
+  border-radius: 15px;
+  background: rgb(74, 3, 189);
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  background: rgb(253, 21, 214);
+  border-radius: 15px;
+}
+
+.back:focus {
+  outline: none;
 }
