@@ -83,6 +83,14 @@ window.addEventListener('DOMContentLoaded', () => {
     voteUxButton.classList.add('hidden')
   })
 
+  // FORM PP ANIMATIONS ******************************************************************
+  const formPP = document.querySelector('.ppSmall')
+  formPP.addEventListener('click', () => {
+    pageOne.forEach(elem => elem.classList.add('hidden'))
+    pageTwo.forEach(elem => elem.classList.remove('hidden'))
+  })
+
+
   // PRIVACY POLICY ANIMATIONS ******************************************************************
   const privacyPolicy = document.querySelector('.pp')
   privacyPolicy.addEventListener('click', () => {

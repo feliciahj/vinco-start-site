@@ -25,19 +25,22 @@
       </div>
     </div>
   </div>
+
   <nav class="page-1">
     <div class="home">
       <a href="#start" class="vinco tanz">V</a>
     </div>
     <div class="navItems">
       <a href="#mission" class="tanz">MISSION</a>
-      <a href="#team" class="tanz">TEAM</a>
+      <a href="#how" class="tanz">HOW IT WORKS</a>
+      <a href="#team" class="tanz">ABOUT US</a>
       <a href="#poll" class="tanz">VOTE</a>
       <!-- <a href="https://medium.com/vinco-invest" class="tanz">BLOG</a> -->
       <a href="#contact" class="tanz">CONTACT</a>
       <div class="early"><a href="#access" class="white">GET EARLY ACCESS</a></div>
     </div>
   </nav>
+
   <section class="page-1" id="start">
     <div class="start">
       <div class="columns">
@@ -79,6 +82,7 @@
       </div>
     </div>
   </section>
+
   <section class="page-1 info" id="mission">
     <div class="mission">
       <h2 class="subtitle">MISSION</h2>
@@ -98,6 +102,7 @@
       </div>
     </div>
   </section>
+
   <section class="page-1 info" id="how">
     <div class="how">
       <h2 class="subtitle">HOW IT WORKS</h2>
@@ -124,6 +129,7 @@
       </div>
     </div>
   </section>
+
   <section class="page-1 info" id="poll">
     <div class="poll">
       <h2 class="subtitle">WHAT DO YOU THINK?</h2>
@@ -156,31 +162,78 @@
       </div>
     </div>
   </section>
+
   <section class="page-1 info" id="access">
     <div class="access">
-      <h2 class="subtitle">GET EARLY ACCESS</h2>
+      <div class="centre">
+          <form class="form">
+              <h2 class="formTitle centre">GET EARLY ACCESS</h2>
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname"><br>
+              Email:<br>
+              <input type="email" name="email"><br>
+              <br>
+              <label class="container">
+              I am new to investing<br>
+              <input type="checkbox" name="newbie" value="newbie">
+              <span class="checkmark"></span>
+            </label>
+              <label class="container">
+                  By checking this box I agree with the <a class="ppSmall">Privacy Policy</a>.<br>
+                  I understand that I can withdraw my consent at any time.<br>
+                  <input type="checkbox" name="consent" value="agree" class="small">
+                  <span class="checkmark"></span>
+              </label>
+              <br>
+              <input type="submit" value="SIGN ME UP!" class="submit">
+            </form>
+      </div>
     </div>
   </section>
+
   <section class="page-1 info" id="team">
     <div class="team">
-      <h2 class="subtitle">TEAM</h2>
+      <h2 class="subtitle">ABOUT US</h2>
+      <div class="columns">
+        <div class="team-col">
+          <p class="teamText">
+              <span class="vinco grey">V</span>INCO was founded by Felicia Hjertman. Felicia has 8 years of experience in investment management at one of the world’s leading firms with a focus on long-term Growth style investing.
+               She has analysed companies across regions and sectors, and managed portfolios for institutional and retail investors. 
+          </br>
+          </br>
+              She is also a junior web developer after having completed a 3-month Software Engineering Immersive course at General Assembly in London. 
+          </br>
+          </br>      
+              She studied International Business and Russian Language at university and speaks several languages. 
+          </p>
+        </br>
+          <div class="rightAlign">
+              <a href="https://www.linkedin.com/in/feliciahjertman/"><img src="./assets/linkedin-grey.png" class="team-png"></img></a>
+          </div>
+        </div>
+        <div class="team-col">
+          <img src="./assets/felicia.jpeg" class="felicia"></img>
+        </div>
+      </div>
     </div>
   </section>
+
   <section class="page-1 info" id="contact">
     <div class="contact">
       <h2 class="subtitle">CONTACT</h2>
-    </div>
-    <div>
-      <a href="mailto:contact@vincoinvest.com"><img src="./assets/at-grey.png" class="contact-png"></img></a>
+      <p class="reachOut">We would love to hear from you!
       </br>
-      <p>Follow us on</p>
-      </br>
-      <a href="https://twitter.com/vincoinvest"><img src="./assets/twitter-grey.png" class="contact-png"></img></a>
-      <a href="https://medium.com/vinco-invest"><img src="./assets/medium-grey.png" class="contact-png"></img></a>
-    </div>
+      </br> 
+      You can email us here:
+         <a href="mailto:contact@vincoinvest.com"><img src="./assets/at-grey.png" class="contact-png"></img></a> or you can find us here:
+          <a href="https://twitter.com/vincoinvest"><img src="./assets/twitter-grey.png" class="contact-png"></img></a> and here:
+           <a href="https://medium.com/vinco-invest"><img src="./assets/medium-grey.png" class="contact-png"></img></a></p> 
     </div>
   </section>
-  <div class="page-1 reg centre footer">
+
+  <div class="page-1 reg centre footer" id="footer">
     <div class="page-1">© VINCO Invest Limited is registered in England & Wales with company number 12357713 and its
       registered office address is Cannon Place, 78 Cannon Street, London, EC4N 6AF.</div>
     <div class="page-1">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a
@@ -193,6 +246,7 @@
         href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <a class="pp page-1">Privacy Policy</a>
   </div>
+
   <div class="page-2 hidden privacy">
     <div>
       <button class="page-2 hidden back">Go back</button>
@@ -277,6 +331,7 @@
           href="https://ico.org.uk/" class="click">(www.ico.org.uk)</a>.
         We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please
         contact us in the first instance.</p>
+        <br class="page-2 hidden">
     </div>
   </div>
 </body>
