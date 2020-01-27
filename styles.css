@@ -50,6 +50,11 @@ section {
   font-family: 'Major Mono Display', monospace;
 }
 
+.white {
+  background:rgb(74, 3, 189);
+  color: white;
+}
+
 .tanz {
   color: rgb(74, 3, 189);
 }
